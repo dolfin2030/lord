@@ -1,0 +1,56 @@
+```
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+coverage/
+target/
+
+# Runtime data
+.env
+.env.local
+.env.*
+.penv
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+ENV/
+
+# Debug
+dblog
+debug.log
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Prisma
+prisma/migrations/
+*.generated.ts
+
+# Docker
+.dockerenv
+!docker-compose.yml
+!Dockerfile
+
+# Turborepo
+.node_modules
+.turbo/
+```
