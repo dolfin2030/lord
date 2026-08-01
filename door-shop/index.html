@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه درب ضد سرقت استاندارد</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1><i class="fas fa-shield-alt"></i> درب‌های ایمن</h1>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="#home">خانه</a></li>
+                        <li><a href="#products">محصولات</a></li>
+                        <li><a href="#features">ویژگی‌ها</a></li>
+                        <li><a href="#about">درباره ما</a></li>
+                        <li><a href="#contact">تماس با ما</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="tel:02112345678" class="phone-btn">
+                        <i class="fas fa-phone"></i>
+                        <span>۰۲۱-۱۲۳۴۵۶۷۸</span>
+                    </a>
+                    <button class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>امنیت خانه شما، تخصص ماست</h2>
+                <p>ارائه دهنده بهترین درب‌های ضد سرقت با استانداردهای بین‌المللی</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">مشاهده محصولات</a>
+                    <a href="#contact" class="btn btn-secondary">دریافت مشاوره رایگان</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-door.png" alt="درب ضد سرقت" onerror="this.src='https://via.placeholder.com/500x400?text=Security+Door'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>چرا درب‌های ما؟</h2>
+                <p>ویژگی‌های منحصر به فرد محصولات ما</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>قفل‌های پیشرفته</h3>
+                    <p>مجهز به قفل‌های هوشمند و ضد سرقت با تکنولوژی روز دنیا</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>مقاوم در برابر آتش</h3>
+                    <p>دارای گواهی مقاومت حرارتی تا ۹۰ دقیقه</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-volume-mute"></i>
+                    </div>
+                    <h3>عایق صوتی</h3>
+                    <p>کاهش آلودگی صوتی تا ۴۵ دسی‌بل برای آرامش بیشتر</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>استاندارد ملی</h3>
+                    <p>دارای نشان استاندارد ملی ایران و گواهی کیفیت</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>محصولات ما</h2>
+                <p>بهترین درب‌های ضد سرقت با تنوع طراحی و رنگ</p>
+            </div>
+            <div class="products-filter">
+                <button class="filter-btn active" data-filter="all">همه</button>
+                <button class="filter-btn" data-filter="classic">کلاسیک</button>
+                <button class="filter-btn" data-filter="modern">مدرن</button>
+                <button class="filter-btn" data-filter="luxury">لوکس</button>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="classic">
+                    <div class="product-image">
+                        <img src="images/product1.jpg" alt="درب کلاسیک مدل الماس" onerror="this.src='https://via.placeholder.com/300x400?text=Classic+Door'">
+                        <div class="product-badge">پرفروش</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>درب کلاسیک مدل الماس</h3>
+                        <p class="product-desc">طراحی کلاسیک با ورق فولادی ۱.۵ میلی‌متری</p>
+                        <div class="product-price">
+                            <span class="price">۱۸,۵۰۰,۰۰۰ تومان</span>
+                        </div>
+                        <button class="btn btn-outline" onclick="showProductDetails('classic-diamond')">جزئیات بیشتر</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="modern">
+                    <div class="product-image">
+                        <img src="images/product2.jpg" alt="درب مدرن مدل پلاتین" onerror="this.src='https://via.placeholder.com/300x400?text=Modern+Door'">
+                    </div>
+                    <div class="product-info">
+                        <h3>درب مدرن مدل پلاتین</h3>
+                        <p class="product-desc">طراحی مینیمال با رنگ الکترواستاتیک</p>
+                        <div class="product-price">
+                            <span class="price">۲۲,۰۰۰,۰۰۰ تومان</span>
+                        </div>
+                        <button class="btn btn-outline" onclick="showProductDetails('modern-platinum')">جزئیات بیشتر</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="luxury">
+                    <div class="product-image">
+                        <img src="images/product3.jpg" alt="درب لوکس مدل سلطنتی" onerror="this.src='https://via.placeholder.com/300x400?text=Luxury+Door'">
+                        <div class="product-badge new">جدید</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>درب لوکس مدل سلطنتی</h3>
+                        <p class="product-desc">طراحی خاص با روکش چوب طبیعی</p>
+                        <div class="product-price">
+                            <span class="price">۳۵,۰۰۰,۰۰۰ تومان</span>
+                        </div>
+                        <button class="btn btn-outline" onclick="showProductDetails('luxury-royal')">جزئیات بیشتر</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="classic">
+                    <div class="product-image">
+                        <img src="images/product4.jpg" alt="درب کلاسیک مدل یاقوت" onerror="this.src='https://via.placeholder.com/300x400?text=Classic+Door+2'">
+                    </div>
+                    <div class="product-info">
+                        <h3>درب کلاسیک مدل یاقوت</h3>
+                        <p class="product-desc">مناسب برای ساختمان‌های لوکس و قدیمی</p>
+                        <div class="product-price">
+                            <span class="price">۲۰,۵۰۰,۰۰۰ تومان</span>
+                        </div>
+                        <button class="btn btn-outline" onclick="showProductDetails('classic-ruby')">جزئیات بیشتر</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>درباره شرکت ما</h2>
+                    <p>شرکت درب‌های ایمن با بیش از ۱۵ سال سابقه در تولید و نصب درب‌های ضد سرقت، همواره تلاش کرده است تا با استفاده از بهترین مواد اولیه و جدیدترین تکنولوژی‌های روز دنیا، محصولاتی با بالاترین کیفیت را به مشتریان عزیز ارائه دهد.</p>
+                    <p>تمامی محصولات ما دارای گواهی استاندارد ملی ایران بوده و تحت ضمانت ۵ ساله خدمات پس از فروش قرار دارند.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">۱۵+</span>
+                            <span class="stat-label">سال تجربه</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">۵۰۰۰+</span>
+                            <span class="stat-label">مشتری راضی</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">۱۰۰%</span>
+                            <span class="stat-label">ضمانت کیفیت</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="درباره ما" onerror="this.src='https://via.placeholder.com/500x300?text=About+Us'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>تماس با ما</h2>
+                <p>برای دریافت مشاوره رایگان با ما تماس بگیرید</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>آدرس:</h4>
+                            <p>تهران، خیابان ولیعصر، نرسیده به میدان ونک، پلاک ۱۲۳</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>تلفن:</h4>
+                            <p>۰۲۱-۱۲۳۴۵۶۷۸</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div>
+                            <h4>موبایل:</h4>
+                            <p>۰۹۱۲-۳۴۵۶۷۸۹</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>ایمیل:</h4>
+                            <p>info@securedoor.ir</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="نام و نام خانوادگی" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="شماره تماس" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service">
+                                <option value="">انتخاب خدمت مورد نظر</option>
+                                <option value="consultation">مشاوره رایگان</option>
+                                <option value="installation">نصب درب</option>
+                                <option value="repair">تعمیرات</option>
+                                <option value="other">سایر</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" placeholder="پیام شما"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">ارسال پیام</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>درب‌های ایمن</h3>
+                    <p>تولید کننده برتر درب‌های ضد سرقت در ایران با بیش از ۱۵ سال سابقه درخشان</p>
+                </div>
+                <div class="footer-section">
+                    <h4>لینک‌های سریع</h4>
+                    <ul>
+                        <li><a href="#home">خانه</a></li>
+                        <li><a href="#products">محصولات</a></li>
+                        <li><a href="#about">درباره ما</a></li>
+                        <li><a href="#contact">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>ساعات کاری</h4>
+                    <p>شنبه تا چهارشنبه: ۸ صبح تا ۶ عصر</p>
+                    <p>پنجشنبه: ۸ صبح تا ۲ ظهر</p>
+                    <p>جمعه: تعطیل</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ۱۴۰۳ تمامی حقوق برای شرکت درب‌های ایمن محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

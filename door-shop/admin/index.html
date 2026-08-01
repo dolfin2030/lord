@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل مدیریت - فروشگاه درب ضد سرقت</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-door-open"></i> پنل مدیریت</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#dashboard" class="nav-item active" data-section="dashboard">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>داشبورد</span>
+                </a>
+                <a href="#products" class="nav-item" data-section="products">
+                    <i class="fas fa-box"></i>
+                    <span>مدیریت محصولات</span>
+                </a>
+                <a href="#orders" class="nav-item" data-section="orders">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>سفارشات</span>
+                </a>
+                <a href="#messages" class="nav-item" data-section="messages">
+                    <i class="fas fa-envelope"></i>
+                    <span>پیام‌ها</span>
+                </a>
+                <a href="#settings" class="nav-item" data-section="settings">
+                    <i class="fas fa-cog"></i>
+                    <span>تنظیمات</span>
+                </a>
+                <a href="../index.html" class="nav-item logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>خروج</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <!-- Header -->
+            <header class="admin-header">
+                <div class="header-left">
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h1 id="pageTitle">داشبورد</h1>
+                </div>
+                <div class="header-right">
+                    <div class="user-info">
+                        <img src="https://ui-avatars.com/api/?name=Admin&background=4A5568&color=fff" alt="Admin" class="user-avatar">
+                        <span class="user-name">مدیر سیستم</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Section -->
+            <section id="dashboard" class="admin-section active">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon products">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>12</h3>
+                            <p>محصولات</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon orders">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>5</h3>
+                            <p>سفارشات جدید</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon messages">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>8</h3>
+                            <p>پیام‌های خوانده نشده</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon revenue">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>45,000,000</h3>
+                            <p>فروش ماهانه (تومان)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recent-orders">
+                    <h2>آخرین سفارشات</h2>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>شماره سفارش</th>
+                                    <th>مشتری</th>
+                                    <th>محصول</th>
+                                    <th>مبلغ (تومان)</th>
+                                    <th>وضعیت</th>
+                                    <th>تاریخ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#1001</td>
+                                    <td>علی محمدی</td>
+                                    <td>درب کلاسیک مدل A1</td>
+                                    <td>8,500,000</td>
+                                    <td><span class="status pending">در انتظار بررسی</span></td>
+                                    <td>1402/08/15</td>
+                                </tr>
+                                <tr>
+                                    <td>#1002</td>
+                                    <td>مریم حسینی</td>
+                                    <td>درب مدرن مدل B2</td>
+                                    <td>12,000,000</td>
+                                    <td><span class="status processing">در حال پردازش</span></td>
+                                    <td>1402/08/14</td>
+                                </tr>
+                                <tr>
+                                    <td>#1003</td>
+                                    <td>رضا کریمی</td>
+                                    <td>درب لوکس مدل C3</td>
+                                    <td>18,500,000</td>
+                                    <td><span class="status completed">تکمیل شده</span></td>
+                                    <td>1402/08/13</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Products Section -->
+            <section id="products" class="admin-section">
+                <div class="section-header">
+                    <h2>مدیریت محصولات</h2>
+                    <button class="btn-primary" id="addProductBtn">
+                        <i class="fas fa-plus"></i> افزودن محصول جدید
+                    </button>
+                </div>
+
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>تصویر</th>
+                                <th>نام محصول</th>
+                                <th>دسته‌بندی</th>
+                                <th>قیمت (تومان)</th>
+                                <th>موجودی</th>
+                                <th>وضعیت</th>
+                                <th>عملیات</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productsTableBody">
+                            <tr>
+                                <td><img src="https://via.placeholder.com/50" alt="Product" class="product-thumb"></td>
+                                <td>درب کلاسیک مدل A1</td>
+                                <td>کلاسیک</td>
+                                <td>8,500,000</td>
+                                <td>15</td>
+                                <td><span class="status active">فعال</span></td>
+                                <td>
+                                    <button class="btn-sm btn-edit"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-sm btn-delete"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://via.placeholder.com/50" alt="Product" class="product-thumb"></td>
+                                <td>درب مدرن مدل B2</td>
+                                <td>مدرن</td>
+                                <td>12,000,000</td>
+                                <td>8</td>
+                                <td><span class="status active">فعال</span></td>
+                                <td>
+                                    <button class="btn-sm btn-edit"><i class="fas fa-edit"></i></button>
+                                    <button class="btn-sm btn-delete"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Orders Section -->
+            <section id="orders" class="admin-section">
+                <div class="section-header">
+                    <h2>مدیریت سفارشات</h2>
+                    <div class="filter-group">
+                        <select class="form-select">
+                            <option value="">همه وضعیت‌ها</option>
+                            <option value="pending">در انتظار بررسی</option>
+                            <option value="processing">در حال پردازش</option>
+                            <option value="completed">تکمیل شده</option>
+                            <option value="cancelled">لغو شده</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>شماره سفارش</th>
+                                <th>مشتری</th>
+                                <th>محصول</th>
+                                <th>تعداد</th>
+                                <th>مبلغ کل (تومان)</th>
+                                <th>وضعیت</th>
+                                <th>تاریخ</th>
+                                <th>عملیات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#1001</td>
+                                <td>علی محمدی</td>
+                                <td>درب کلاسیک مدل A1</td>
+                                <td>1</td>
+                                <td>8,500,000</td>
+                                <td><span class="status pending">در انتظار بررسی</span></td>
+                                <td>1402/08/15</td>
+                                <td>
+                                    <button class="btn-sm btn-view"><i class="fas fa-eye"></i></button>
+                                    <button class="btn-sm btn-edit"><i class="fas fa-edit"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1002</td>
+                                <td>مریم حسینی</td>
+                                <td>درب مدرن مدل B2</td>
+                                <td>1</td>
+                                <td>12,000,000</td>
+                                <td><span class="status processing">در حال پردازش</span></td>
+                                <td>1402/08/14</td>
+                                <td>
+                                    <button class="btn-sm btn-view"><i class="fas fa-eye"></i></button>
+                                    <button class="btn-sm btn-edit"><i class="fas fa-edit"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Messages Section -->
+            <section id="messages" class="admin-section">
+                <div class="section-header">
+                    <h2>پیام‌های دریافتی</h2>
+                </div>
+
+                <div class="messages-list">
+                    <div class="message-card unread">
+                        <div class="message-header">
+                            <h4>علی محمدی</h4>
+                            <span class="message-date">1402/08/15 - 14:30</span>
+                        </div>
+                        <p class="message-subject">موضوع: سوال درباره نصب درب</p>
+                        <p class="message-preview">سلام، آیا نصب درب هم انجام می‌دید؟ هزینه نصب چقدره؟</p>
+                        <div class="message-actions">
+                            <button class="btn-sm btn-view">مشاهده</button>
+                            <button class="btn-sm btn-reply">پاسخ</button>
+                        </div>
+                    </div>
+                    <div class="message-card">
+                        <div class="message-header">
+                            <h4>مریم حسینی</h4>
+                            <span class="message-date">1402/08/14 - 10:15</span>
+                        </div>
+                        <p class="message-subject">موضوع: پیگیری سفارش</p>
+                        <p class="message-preview">سلام، سفارش من کی آماده میشه؟</p>
+                        <div class="message-actions">
+                            <button class="btn-sm btn-view">مشاهده</button>
+                            <button class="btn-sm btn-reply">پاسخ</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Settings Section -->
+            <section id="settings" class="admin-section">
+                <div class="section-header">
+                    <h2>تنظیمات سایت</h2>
+                </div>
+
+                <div class="settings-form">
+                    <div class="form-group">
+                        <label for="siteName">نام سایت</label>
+                        <input type="text" id="siteName" class="form-control" value="فروشگاه درب ضد سرقت استاندارد">
+                    </div>
+                    <div class="form-group">
+                        <label for="siteEmail">ایمیل تماس</label>
+                        <input type="email" id="siteEmail" class="form-control" value="info@doorshop.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="sitePhone">تلفن تماس</label>
+                        <input type="tel" id="sitePhone" class="form-control" value="021-12345678">
+                    </div>
+                    <div class="form-group">
+                        <label for="siteAddress">آدرس</label>
+                        <textarea id="siteAddress" class="form-control" rows="3">تهران، خیابان ولیعصر، پلاک 123</textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button class="btn-primary">ذخیره تغییرات</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Add/Edit Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">افزودن محصول جدید</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="productForm">
+                    <div class="form-group">
+                        <label for="productName">نام محصول</label>
+                        <input type="text" id="productName" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="productCategory">دسته‌بندی</label>
+                        <select id="productCategory" class="form-control" required>
+                            <option value="">انتخاب کنید</option>
+                            <option value="classic">کلاسیک</option>
+                            <option value="modern">مدرن</option>
+                            <option value="luxury">لوکس</option>
+                            <option value="economic">اقتصادی</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="productPrice">قیمت (تومان)</label>
+                        <input type="number" id="productPrice" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="productStock">موجودی</label>
+                        <input type="number" id="productStock" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="productDescription">توضیحات</label>
+                        <textarea id="productDescription" class="form-control" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="productImage">تصویر محصول</label>
+                        <input type="file" id="productImage" class="form-control" accept="image/*">
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">ذخیره</button>
+                        <button type="button" class="btn-secondary modal-close">انصراف</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
