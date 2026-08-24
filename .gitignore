@@ -1,6 +1,49 @@
 ```
 # Dependencies
+# Node
 node_modules/
+.pnpm-store/
+
+# Dependencies
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+coverage/
+
+# Docker
+docker-compose.override.yml
+
+# Database
+*.db
+*.sqlite
+
+# Temporary files
+tmp/
+temp//
 
 # Build outputs
 dist/
