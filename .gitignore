@@ -1,34 +1,23 @@
 ```
+# Docker
+.dockerenv
+!docker-compose.yml
+
 # Dependencies
 node_modules/
-.pnpm-store/
+vendor/
 
-# Build outputs
-dist/
-build/
-coverage/
-target/
+# Logs and temp files
+*.log
+*.tmp
+*.temp
 
-# Runtime data
+# Environment
 .env
 .env.local
-.env.*
-.penv
-venv/
-.venv/
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-ENV/
+*.env.*
 
-# Debug
-dblog
-debug.log
-
-# IDEs
+# Editors
 .vscode/
 .idea/
 *.swp
@@ -38,19 +27,34 @@ debug.log
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
+# Build artifacts
+dist/
+build/
+target/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.out
+*.class
 
-# Prisma
-prisma/migrations/
-*.generated.ts
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
 
-# Docker
-.dockerenv
-!docker-compose.yml
-!Dockerfile
+# Coverage
+coverage/
+htmlcov/
+.coverage
 
-# Turborepo
-.node_modules
-.turbo/
+# Cache
+.mypy_cache/
+.pytest_cache/
+.gradle/
 ```
